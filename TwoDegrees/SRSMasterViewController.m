@@ -39,7 +39,7 @@
   [accountStore requestAccessToAccountsWithType:accountType
                                         options:nil
                                      completion:^(BOOL granted, NSError *error) {
-     if (granted == YES) {
+     if (granted) {
        NSArray *accounts = [accountStore accountsWithAccountType:accountType];
        
        if ([accounts count] > 0) {
