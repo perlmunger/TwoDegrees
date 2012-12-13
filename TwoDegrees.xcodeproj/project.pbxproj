@@ -17,7 +17,10 @@
 		B3CC72AF167786AB00BCA65B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CC72AE167786AB00BCA65B /* Default@2x.png */; };
 		B3CC72B1167786AB00BCA65B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3CC72B0167786AB00BCA65B /* Default-568h@2x.png */; };
 		B3CC72B4167786AB00BCA65B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CC72B2167786AB00BCA65B /* MainStoryboard.storyboard */; };
-		B3CC72B7167786AB00BCA65B /* SRSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CC72B6167786AB00BCA65B /* SRSViewController.m */; };
+		B3CC72BE1677874F00BCA65B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC72BD1677874F00BCA65B /* Social.framework */; };
+		B3CC72C0167787E100BCA65B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CC72BF167787E100BCA65B /* Accounts.framework */; };
+		B3CC72C31677AB4900BCA65B /* SRSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CC72C21677AB4900BCA65B /* SRSMasterViewController.m */; };
+		B3CC72C61677AB6C00BCA65B /* SRSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CC72C51677AB6C00BCA65B /* SRSDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,12 @@
 		B3CC72AE167786AB00BCA65B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B3CC72B0167786AB00BCA65B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B3CC72B3167786AB00BCA65B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B3CC72B5167786AB00BCA65B /* SRSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSViewController.h; sourceTree = "<group>"; };
-		B3CC72B6167786AB00BCA65B /* SRSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSViewController.m; sourceTree = "<group>"; };
+		B3CC72BD1677874F00BCA65B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B3CC72BF167787E100BCA65B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B3CC72C11677AB4900BCA65B /* SRSMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSMasterViewController.h; sourceTree = "<group>"; };
+		B3CC72C21677AB4900BCA65B /* SRSMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSMasterViewController.m; sourceTree = "<group>"; };
+		B3CC72C41677AB6C00BCA65B /* SRSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSDetailViewController.h; sourceTree = "<group>"; };
+		B3CC72C51677AB6C00BCA65B /* SRSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CC72C0167787E100BCA65B /* Accounts.framework in Frameworks */,
+				B3CC72BE1677874F00BCA65B /* Social.framework in Frameworks */,
 				B3CC729B167786AB00BCA65B /* UIKit.framework in Frameworks */,
 				B3CC729D167786AB00BCA65B /* Foundation.framework in Frameworks */,
 				B3CC729F167786AB00BCA65B /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,8 @@
 		B3CC7299167786AB00BCA65B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3CC72BF167787E100BCA65B /* Accounts.framework */,
+				B3CC72BD1677874F00BCA65B /* Social.framework */,
 				B3CC729A167786AB00BCA65B /* UIKit.framework */,
 				B3CC729C167786AB00BCA65B /* Foundation.framework */,
 				B3CC729E167786AB00BCA65B /* CoreGraphics.framework */,
@@ -83,12 +94,14 @@
 		B3CC72A0167786AB00BCA65B /* TwoDegrees */ = {
 			isa = PBXGroup;
 			children = (
+				B3CC72A1167786AB00BCA65B /* Supporting Files */,
 				B3CC72A9167786AB00BCA65B /* SRSAppDelegate.h */,
 				B3CC72AA167786AB00BCA65B /* SRSAppDelegate.m */,
 				B3CC72B2167786AB00BCA65B /* MainStoryboard.storyboard */,
-				B3CC72B5167786AB00BCA65B /* SRSViewController.h */,
-				B3CC72B6167786AB00BCA65B /* SRSViewController.m */,
-				B3CC72A1167786AB00BCA65B /* Supporting Files */,
+				B3CC72C11677AB4900BCA65B /* SRSMasterViewController.h */,
+				B3CC72C21677AB4900BCA65B /* SRSMasterViewController.m */,
+				B3CC72C41677AB6C00BCA65B /* SRSDetailViewController.h */,
+				B3CC72C51677AB6C00BCA65B /* SRSDetailViewController.m */,
 			);
 			path = TwoDegrees;
 			sourceTree = "<group>";
@@ -176,7 +189,8 @@
 			files = (
 				B3CC72A7167786AB00BCA65B /* main.m in Sources */,
 				B3CC72AB167786AB00BCA65B /* SRSAppDelegate.m in Sources */,
-				B3CC72B7167786AB00BCA65B /* SRSViewController.m in Sources */,
+				B3CC72C31677AB4900BCA65B /* SRSMasterViewController.m in Sources */,
+				B3CC72C61677AB6C00BCA65B /* SRSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
